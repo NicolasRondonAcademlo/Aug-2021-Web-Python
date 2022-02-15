@@ -16,3 +16,4 @@ complex_1 = complex(0, 2)
 print(type(complex_1))
 
 print(flotante)
+print(complex_1)
