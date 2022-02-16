@@ -91,3 +91,14 @@ txt = ",".join(txt)
 print(txt)
 
 # https://www.w3schools.com/python/python_ref_string.asp
+
+
+Final = """
+It was a special pleasure to see things eaten,
+ to see things blackened and changed. 
+ with the brass nozzle in his fists, with this great python spitting 
+ its venomous kerosene upon the world, the blood pounded in his head,
+  and his hands were the hands of some amazing conductor playing all
+   the symphonies of blazing and burning to bring down the tatters
+    and charcoal ruins of history. - Fahrenheit 451
+"""
