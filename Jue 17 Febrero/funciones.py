@@ -139,4 +139,55 @@ def multiply(a:int, b:int) -> int:
     #return a*b
     return c
 
-multiply()
+# Lambda -> funcion anonima que retorna algun dato
+# lambda parameters: expresion
+
+triple  = lambda num: num*3
+print(triple(4))
+
+concat_strings = lambda a,b,c: a[0] +  b[0] + c[0]
+print(concat_strings("World", "Wide", "Web"))
+
+my_func = lambda num: "High" if num > 50 else "Low"
+print(my_func(43))
+
+
+def add(n1, n2):
+    return n1 + n2
+
+
+def subtract(n1, n2):
+    return n1 - n2
+
+
+def multiply(n1, n2):
+    return n1 * n2
+
+
+def divide(n1, n2):
+    return n1 / n2
+
+def calculator(operation, n1,n2):
+    return operation(n1,n2)
+
+result = calculator(multiply,10, 20)
+print(result)
+
+result = calculator(lambda n1, n2: n1*n2, 10,20)
+print(result)
+
+def rec_count(number):
+    print(number, "bb")
+    if number == 0:
+        return 0
+    rec_count(number -1)
+    print(number , "aa")
+
+def func():
+    return "a"
+
+    return "b"
+
+print(func()) 
+
+
