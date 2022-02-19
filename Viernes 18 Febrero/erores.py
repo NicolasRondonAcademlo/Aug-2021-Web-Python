@@ -16,13 +16,14 @@ except:
 
 
 
-a = "ada"
+a = 545
 b = 0
 try:
     print(a/b)
 except TypeError as e:
     print("Asegurate que todo lo que se ingrese sea  numero")
 except ZeroDivisionError as e:
+    print(str(e))
     print("Asegurate que no estas dividiendo por 0")
 finally:
     print("Esto siempre se ejecuta")
