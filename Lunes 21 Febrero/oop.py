@@ -142,6 +142,7 @@ class Employee:
         self.ID = ID,
         self.__salary = salary # "Privado"
 
+
     def display_salary(self):
         self.__display_id()
         return self.__salary
@@ -155,3 +156,4 @@ print (Steve.display_salary())
 
 print (Steve._Employee__salary, "No que muy privado")
 #Steve._Employee__salary
+
