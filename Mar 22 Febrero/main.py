@@ -94,3 +94,63 @@ steve.login("steve", "12345")
 steve.login("Steve", "6789")
 steve.password= ("12345", "6789")
 steve.login("Steve", "6789")
+
+class A:
+    def __init__(self, valor):
+        self.__valor = valor
+
+    @property
+    def valor(self):
+        return  self.__valor.lower()
+
+    @valor.setter
+    def valor(self, value):
+        self.__valor = value
+
+    def true_valor(self):
+        return  self.__valor
+
+
+a =  A("VALOR")
+print(a.valor)
+print(a.true_valor())
+
+
+class Rectangle:
+    def __init__(self, lenght, widht, color):
+        self.__lenght = lenght
+        self.__width = widht
+        self.color = color
+
+    def area(self):
+        return  self.__width * self.__lenght
+
+    def perimiter(self):
+        return  2 * ( self.__width + self.__lenght)
+
+
+    @property
+    def lenght(self):
+        return  self.__lenght
+
+    @lenght.setter
+    def lenght(self, value):
+        self.__lenght = int(value)
+
+rectangulo = Rectangle(4.5,5,"rojo")
+print(rectangulo.area())
+print(rectangulo.perimiter())
+print(rectangulo.lenght)
+
+
+class Article:
+    def __init__(self, title):
+        self.title = title
+
+    @property
+    def titles(self):
+        return  self.title
+
+
+
+
