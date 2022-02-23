@@ -62,3 +62,35 @@ steve.login("steve", "12345")
 steve.login("steve", "6789")
 steve.password= "6789"
 steve.login("steve", "6789")
+
+
+
+class User:
+    def __init__(self, user_name=None, password=None):
+        self.__user_name = user_name
+        self.__password = password
+
+
+    def login(self, user_name, password):
+        if self.__user_name.lower() == user_name.lower() and self.__password == password:
+            print("Tienes acceso")
+        else:
+            print("Credenciales inválidas")
+
+    @property
+    def password(self):
+        return self.__password
+
+    @password.setter
+    def password(self, values):
+        old_password, new_password = values
+        if old_password == self.__password:
+            self.__password = new_password
+
+
+steve = User("Steve", "12345")
+
+steve.login("steve", "12345")
+steve.login("Steve", "6789")
+steve.password= ("12345", "6789")
+steve.login("Steve", "6789")
