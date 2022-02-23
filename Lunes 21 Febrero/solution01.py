@@ -15,3 +15,10 @@ class Point:
 
 point = Point(1,3,5)
 print(point.sq_sum())
+
+Front, Back
+React, Back Python
+
+MicroServicios -> Servicio para ususarios, otro para cursos
+Monolitos- (Curso, Usuarios)
+
